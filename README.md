@@ -50,7 +50,7 @@ After that, I use a correlation matrix to select the best variables:
 
 Observing the correlation matrix I look for independent variables correlated with price **(r > 0.3)** and I find 5 parameters **(Grade, Bedrooms, Bathrooms, Sqft living, Sqft above)**, then I look for strongly independent variables correlated between each other **(r > 0.7)** and select the one with the highest correlation to the dependent variable. 
 
-At the end I kept with only 3 variables: Bedrooms, Bathrooms and Grades. Once I had the most relevant variables I implemente the model. 
+At the end **I kept with only 3 variables: Bedrooms, Bathrooms and Grades**. Once I had the most relevant variables I implement the model. 
 
 # Model Implementation 
 
