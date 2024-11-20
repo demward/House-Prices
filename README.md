@@ -54,7 +54,7 @@ At the end I keep only 3 variables: Bedrooms, Bathrooms and Grades. Once I had t
 
 # Model Implementation 
 
-I use a Random Forest Regressor with Python default options. With this model I obtain a **MAPE = 13.44%** and an **Accuracy = 86.56%**
+I use a Random Forest Regressor with Python sklearn default options. With this model I obtain a **MAPE = 13.44%** and an **Accuracy = 86.56%**
 
 (Image) 
 
