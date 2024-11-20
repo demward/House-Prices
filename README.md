@@ -3,8 +3,8 @@
 # Introduction
 
 The focus in this project is to answer two key questions: 
-1.- What are the most important factors that determine a house's price?
-2.- Can I predict house values based on these factors?
+* What are the most important factors that determine a house's price?
+*  Can I predict house values based on these factors?
 
 To address these questions, I did this plan of action:
 * Monitor house prices and their characteristics.
