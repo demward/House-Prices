@@ -38,25 +38,27 @@ After I identify these variables I start with the statistical techniques to obta
 
 First, I examine the distribution of the variables to ensure that maintains a centered normal distribution (like grade) 
 
-(Image) 
+![First_Paramaters_Distributions](https://github.com/user-attachments/assets/91788435-a55c-4d21-bf8b-414e26fe4392) 
 
 Since I only had one centered normal distribution I apply a natural logarithm to transform the distributions, with that transformations I obtain 7 parameters **(Grade, Sqft lot, Bedrooms, Bathrooms, Sqft living, Sqft above, Sqft backyard)**. 
 
-(Image) 
+![Transformed_Parameters_Distributions](https://github.com/user-attachments/assets/d1dfd938-d32c-445a-9092-34982cf9f758)
 
-After, I use a correlation matrix to select the best variables:
+After that, I use a correlation matrix to select the best variables:
 
-(Image) 
+![Correlation_Matrix](https://github.com/user-attachments/assets/9c343c96-fee8-45aa-a23c-04ee26346142)
 
 Observing the correlation matrix I look for independent variables correlated with price **(r > 0.3)** and I find 5 parameters **(Grade, Bedrooms, Bathrooms, Sqft living, Sqft above)**, then I look for strongly independent variables correlated between each other **(r > 0.7)** and select the one with the highest correlation to the dependent variable. 
 
-At the end I keep only 3 variables: Bedrooms, Bathrooms and Grades. Once I had the most relevant variables I implemente the model. 
+At the end I kept with only 3 variables: Bedrooms, Bathrooms and Grades. Once I had the most relevant variables I implemente the model. 
 
 # Model Implementation 
 
-I use a Random Forest Regressor with Python sklearn default options. With this model I obtain a **MAPE = 13.44%** and an **Accuracy = 86.56%**
+I use a Random Forest Regressor with Python sklearn default options. In the next image I show my model residuals.
 
-(Image) 
+![Model_Residuals](https://github.com/user-attachments/assets/2840eef6-8bf3-4057-b020-2b5c53ce1cd4)
+
+ With this model I obtain a **MAPE = 13.44%** and an **Accuracy = 86.56%**
 
 # Summary 
 
